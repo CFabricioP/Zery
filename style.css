@@ -1,6 +1,7 @@
+
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: #fffafc;
+  background-color: #98FB98;
   color: #333;
   margin: 0;
   padding: 0;
@@ -8,7 +9,7 @@ body {
 
 .container {
   padding: 40px;
-  max-width: 800px;
+  max-width: 900px;
   margin: auto;
   text-align: center;
 }
@@ -20,10 +21,10 @@ body {
 }
 
 .logo {
-  width: 150px;
+  width: 200px;
   height: auto;
-  margin-bottom: 20px;
   border-radius: 10px;
+  margin-bottom: 20px;
 }
 
 .boton {
@@ -35,6 +36,7 @@ body {
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
+  transition: background-color 0.3s ease;
 }
 
 .boton:hover {
@@ -42,9 +44,11 @@ body {
 }
 
 .historia {
-  max-width: 600px;
+  max-width: 700px;
   text-align: justify;
   margin-top: 20px;
+  font-size: 1.1em;
+  line-height: 1.6;
 }
 
 .categorias {
@@ -54,18 +58,43 @@ body {
   margin-top: 30px;
 }
 
-.productos {
+.imagenes-categorias {
   display: flex;
   justify-content: center;
-  gap: 40px;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.img-seccion {
+  width: 200px;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+}
+
+.productos {
+  display: flex;
   flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
   margin-top: 30px;
 }
 
 .producto {
-  background-color: #fce4ec;
+  width: 220px;
+  background-color: #fff;
   border-radius: 10px;
-  padding: 20px;
-  width: 200px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  padding: 15px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+  text-align: center;
+}
+
+.producto img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.producto h3 {
+  font-size: 1em;
+  color: #333;
 }
